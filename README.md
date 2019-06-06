@@ -125,4 +125,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Bruck Wubete](mailto:bruckwendwessenwubet@cmail.carleton.ca)
+MIT
