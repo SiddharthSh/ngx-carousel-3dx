@@ -1,0 +1,8 @@
+<div class="row">
+  <ngx-carousel-3dx [slides]="slides" [options]="options" class="col-12" #carousel>
+    <ngx-carousel-3dx-slide *ngFor="let slide of slides; let i = index" (click)="slideClicked(i)">
+      <img class="slide-img" src="{{slide.src}}" alt=""/>
+    </ngx-carousel-3dx-slide>
+  </ngx-carousel-3dx>
+</div>
+
