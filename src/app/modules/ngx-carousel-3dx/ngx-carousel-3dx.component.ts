@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnDestroy, SimpleChanges, OnChanges } from '@angular/core';
-import { NgxCarousel3dService } from './ngx-carousel-3dx.service';
+import { NgxCarousel3dxService } from './ngx-carousel-3dx.service';
 import * as jqueryProxy from 'jquery';
 const jquery = (<any>jqueryProxy).default || jqueryProxy;
 
@@ -53,7 +53,7 @@ export class NgxCarousel3dComponent implements OnInit, OnDestroy, OnChanges {
     }
 
   buildCarousel(slides, options) {
-    this.$carouselService = new NgxCarousel3dService(this.slides, this.options);
+    this.$carouselService = new NgxCarousel3dxService(this.slides, this.options);
     this.percentSubscription = this.$carouselService.getPercent().subscribe(sub => {this.percentLoaded = sub.percent; });
     this.autoRotationLocked = false;
     return this.$carouselService
