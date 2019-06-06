@@ -20,7 +20,7 @@
     "packagr": "ng-packagr -p ng-package.json"
   },
   "private": false,
-  "dependencies": {
+  "peerDependencies": {
     "@angular/animations": "^7.2.15",
     "@angular/common": "^7.2.15",
     "@angular/compiler": "^7.2.15",
